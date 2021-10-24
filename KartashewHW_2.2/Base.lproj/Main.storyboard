@@ -18,37 +18,51 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uk-0C-qcM">
                                 <rect key="frame" x="30" y="68" width="355" height="133"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7F9-V6-Pmt">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="133"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSZ-nS-Dnw">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="136"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FdK-fd-o7P">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FdK-fd-o7P">
                                 <rect key="frame" x="122" y="232" width="222" height="30"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="8On-DB-0uV"/>
                                 </constraints>
-                                <color key="minimumTrackTintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <color key="thumbTintColor" systemColor="systemPinkColor"/>
+                                <color key="minimumTrackTintColor" systemColor="systemPinkColor"/>
+                                <color key="maximumTrackTintColor" systemColor="systemPinkColor"/>
+                                <color key="thumbTintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
                                     <action selector="sliderRed:" destination="BYZ-38-t0r" eventType="valueChanged" id="BqO-7Q-KGI"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qR0-0H-elJ">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qR0-0H-elJ">
                                 <rect key="frame" x="122" y="282" width="222" height="30"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <color key="minimumTrackTintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <color key="thumbTintColor" systemColor="systemGreenColor"/>
+                                <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                <color key="maximumTrackTintColor" systemColor="systemGreenColor"/>
+                                <color key="thumbTintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
                                     <action selector="sliderGren:" destination="BYZ-38-t0r" eventType="valueChanged" id="CDQ-jr-1ip"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Psr-RL-2v1">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Psr-RL-2v1">
                                 <rect key="frame" x="122" y="329.66666666666669" width="222" height="31"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <color key="minimumTrackTintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <color key="maximumTrackTintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <color key="thumbTintColor" systemColor="systemBlueColor"/>
+                                <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                <color key="maximumTrackTintColor" systemColor="systemBlueColor"/>
+                                <color key="thumbTintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
                                     <action selector="sliderBlue:" destination="BYZ-38-t0r" eventType="valueChanged" id="b5y-2Z-xAn"/>
                                 </connections>
@@ -127,6 +141,8 @@
                         <outlet property="textSliderGreen" destination="lyr-7u-IDy" id="uQF-5I-bHI"/>
                         <outlet property="textSliderRed" destination="ThJ-oW-9Mj" id="Vda-VS-cQg"/>
                         <outlet property="viewScreen" destination="3uk-0C-qcM" id="BdG-iZ-Rex"/>
+                        <outlet property="viewScreenBlue" destination="dSZ-nS-Dnw" id="l1n-ca-bs6"/>
+                        <outlet property="viewScreenGreen" destination="7F9-V6-Pmt" id="zK7-Sv-pmT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
